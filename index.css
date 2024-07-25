@@ -13,6 +13,10 @@ body{
     padding-left: -215px;
   }
 
+    .line{
+        display: none;
+    }
+
   .navbar-list{
     display: flex;
     justify-content: space-around;
@@ -25,12 +29,18 @@ body{
     text-align: left;
   }
 
+  .navbar-list :hover{
+    color: grey;
+  }
+
   li{
     list-style: none;
   }
    
   .navbar-list li{
     display: flex;
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .LOGO {
@@ -47,22 +57,27 @@ body{
   .wrap-info {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
   }
   
 
   .wrap-info li {
     color: rgb(195, 185, 181);
+
   }
+    
+  
 
   .wrap-info li a {
     color: rgb(195, 185, 181);
     text-decoration: none;
   }
 
+ 
+
   .location{
     display: flex;
-    padding: 0px 20px 0px 130px;
+    /* padding: 0px 20px 0px 130px; */
     color: (255, 197, 158);
   }
 
@@ -78,9 +93,16 @@ body{
 
   .container{
     display: flex;
+    justify-content: center;
     max-width: 1180px;
     gap: 30px;
-    padding: 10px 82px;
+    /* padding: 10px 82px; */
+    margin: 0  auto;
+  }
+
+  .list_numbers{
+    position: fixed;
+    left: 80px;
   }
 
     .numbers{
@@ -157,20 +179,27 @@ button{
     
   }
 
-  .catDog_desktop{
-    display: flex;
-    height: 496px;
-    /* width: 120px; */
+  .social_network img:hover{
+    color: grey;
   }
 
-  .catDog_Notepad{
+  
+
+  .catdog_desktop{
+    display: flex;
+    height: 496px;
+    margin-left: -5px;
+  }
+
+  .bird_notepad{
     display: none;
   }
 
 
   .history{
     display: flex;
-    max-width: 1138px;
+    justify-content: center;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 105px 0px 30px 0px;
     background: rgb(251, 248, 248);
@@ -179,9 +208,10 @@ button{
 
     .history_text{
       display: flex;
+      align-items: center;
       flex-direction: column;
       gap: 40px;
-      /* text-align: center; */
+     
     }
 
     .history_text h2{
@@ -196,8 +226,10 @@ button{
     }
 
     .history_text p{
+        display: flex;
       color: rgb(89, 68, 63);
-      padding: 0px 400px;
+      max-width: 342px;
+        
     }
 
     .history_further{
@@ -234,10 +266,16 @@ button{
     border-radius: 100%;
   }
 
-  .our_specialists_foto  img{
+  /* .our_specialists_foto  img{
     max-width: 145px;
     border-radius: 100%;
-  }
+  } */
+
+    .img_specialist img{
+        max-width: 120px;
+    border-radius: 100%;
+    
+    }
 
   .circl_arrow{
     display: flex;
@@ -270,9 +308,9 @@ button{
 
   .footer{
     display: flex;
-    max-width: 1138px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0px 0px 0px 31px;
+    /* padding: 0px 0px 0px 31px; */
     background-color: rgb(89, 68, 63);
 
   }
@@ -280,8 +318,8 @@ button{
   .navigation{
     display: flex;
     align-items: flex-start;
-    gap: 110px;
-    padding: 30px 80px;
+    /* gap: 110px; */
+    
   }
 
   .infomaition{
@@ -289,6 +327,7 @@ button{
     flex-direction: column;
     max-width: 700px;
     gap: 20px;
+    padding: 16px 47px 20px 65px;
   }
 
  .logo_mini {
@@ -323,13 +362,18 @@ button{
 
   .links{
     display: flex;
-    gap: 40px;
+    /* gap: 40px; */
     text-decoration: none;
     max-width: 778px;
   }
 
+  .infomaition_links{
+    padding: 0px 33px 0px 35px;
+  }
+
   .confidentiality{
     max-width: 203px;
+  
   }
 
   .confidentiality p a{
@@ -367,8 +411,8 @@ button{
   .contacts{
     display: flex;
     flex-direction: column;
-    padding: 45px 0px 0px 0px;
-    gap: 24px;
+    padding: 45px 0px 0px 50px;
+    gap: 30px;
   }
 
   .application{
